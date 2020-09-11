@@ -1,0 +1,15 @@
+openwheel1 - 0x58F77553 - Open Wheel
+coquette4 - 0x98F65A5E - Sports
+tigon - 0xAF0B8D48 - Super
+penumbra2 - 0xDA5EC7DA - Sports
+landstalker2 - 0xCE0B9F22 - SUVs
+yosemite3 - 0x409D787 - Off-Road
+club - 0x82E47E85 - Compacts
+gauntlet5 - 0x817AFAAD - Muscle
+dukes3 - 0x7F3415E3 - Muscle
+youga3 - 0x6B73A9BE - Vans
+glendale2 - 0xC98BBAD6 - Sedans
+seminole2 - 0x94114926 - SUVs
+openwheel2 - 0x4669D038 - Open Wheel
+peyote3 - 0x4201A843 - Sports Classics
+manana2 - 0x665F78
