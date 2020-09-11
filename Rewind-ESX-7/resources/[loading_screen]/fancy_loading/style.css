@@ -1,0 +1,61 @@
+div.info {
+    z-index: 96;
+    position: absolute;
+    color: white;
+    left: 8.5%;
+    top: 32.8%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: rgba(0, 0, 0, 0.295);
+    width: 480px;
+    height: 500px;
+    font-size: 22px;
+}
+
+div.connecting {
+    z-index: 96;
+    position: absolute;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    left: 68.5%;
+    top: 52.8%;
+}
+
+div.loadingio-spinner-pulse-pjb36138sac {
+    z-index: 95;
+    position: absolute;
+    bottom: 480px;
+    left: 68%;
+    width: 400px;
+    height: 400px;
+    scale: 0.3;
+    top: 45%;
+}
+
+div.logo {
+    z-index: 94;
+    position: absolute;
+    bottom: 480px;
+    left: 160px;
+    width: 400px;
+    height: 400px;
+}
+
+div.sidepanel {
+    position: absolute;
+    opacity: 0.7;
+    width: 1000px;
+    transform: rotate(12deg);
+    height: 2100px;
+    right: 1210px;
+    margin-top: -200px;
+    z-index: 93;
+}
+
+div.background {
+    z-index: 1;
+    background-attachment: fixed;
+    width: 1920px;
+    height: 1080px;
+    position: fixed;
+}
