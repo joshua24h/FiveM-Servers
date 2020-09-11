@@ -1,0 +1,214 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- <link rel="stylesheet" href="./style.css">-->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+		* {
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  user-select: none;
+		  font-family: 'Roboto', sans-serif;
+		}
+
+		body {
+		  background-size: cover;
+		}
+
+		.container {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100vw;
+		  height: 100vh;
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  background: rgba(32,32,32, .8);
+		}
+
+		.container .logo {
+		  width: 300px;
+		  margin-top: 100px;
+		  animation: moveUpFadeIn 1.5s ease-out;
+		}
+
+		.container .info {
+		  position: absolute;
+		  top: 50px;
+		  right: 20px;
+		  font-size: 14px;
+		  color: rgba(255,255,255, .67);
+		  animation: fadeIn 1.5s ease;
+		}
+
+		.container .title {
+		  position: absolute;
+		  bottom: 50px;
+		  font-size: 16px;
+		  color: rgba(255,255,255, .67);
+		  margin-top: 150px;
+		  animation: fadeIn 1.2s ease;
+		}
+
+		.container .loading-bar {
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  width: 100vw;
+		  height: 10px;
+		  background: #282828;
+		  margin-top: 100px;
+		}
+
+		.container .loading-bar .inner-loading-bar {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 30%;
+		  height: 100%;
+		  background: white;
+		  transition: width .1s ease;
+		}
+
+		.container .social-container {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  animation: fadeIn 1.5s ease;
+		}
+
+		.container .social-container li {
+		  list-style: none;
+		  display: flex;
+		  flex-direction: row;
+		  align-items: center;
+		  margin: 15px 0;
+		}
+
+		.container .social-container li svg {
+		  width: 22px;
+		  margin: 0 10px;
+		  fill: rgba(255,255,255,.8);
+		}
+
+		.container .social-container li p {
+		  font-size: 16px;
+		  color: rgba(255,255,255,.8);
+		}
+
+		@keyframes moveUpFadeIn {
+		  0% {
+			transform: translateY(300px);
+			opacity: 0;
+		  }
+		  100% {
+			transform: translateY(0px);
+			opacity: 1;
+		  }
+		}
+
+		@keyframes fadeIn {
+		  0% {
+			opacity: 0;
+		  }
+		  100% {
+			opacity: 1;
+		  }
+		}
+	</style>
+  </head>
+  <body>
+    <div class="container">
+      <svg class="logo" viewBox="0 0 809.135 191.707">
+        <g transform="translate(-670.885 -383.891)">
+          <path id="Path_1" data-name="Path 1" d="M130.662-77.28H55.85V0H16.885V-189.109H485.892v31.562H55.85v48.836h74.813ZM199.76,0H162.094V-140.533H199.76Zm83.515-45.849,26.106-94.685h39.225L301.2,0H265.351L217.943-140.533h39.225ZM428.094,2.6q-30.912,0-50.33-18.963T358.347-66.89v-3.637q0-21.171,8.183-37.861A60.052,60.052,0,0,1,389.713-134.1q15-9.027,34.224-9.027,28.834,0,45.394,18.184t16.56,51.563v15.326H396.4q1.818,13.768,10.975,22.08t23.184,8.313q21.69,0,33.9-15.716L482.9-22.729A56.349,56.349,0,0,1,460.045-4.091,75,75,0,0,1,428.094,2.6Zm-4.286-115.466q-11.17,0-18.119,7.567t-8.9,21.657H449v-3q-.26-12.524-6.754-19.373T423.808-112.868Z" transform="translate(654 573)" fill="#fff"/>
+          <path id="Path_2" data-name="Path 2" d="M55.85-66.63V0H16.885V-189.109H90.658q21.3,0,37.471,7.793A57.427,57.427,0,0,1,153-159.171q8.7,14.352,8.7,32.666,0,27.795-19.028,43.835T90.009-66.63Zm0-31.562H90.658q15.456,0,23.574-7.273t8.118-20.781q0-13.9-8.183-22.47t-22.6-8.832H55.85ZM188.46,0V-189.109h58.188q24.938,0,44.615,11.235a78.343,78.343,0,0,1,30.717,31.951q11.04,20.716,11.04,47.083v8.7q0,26.366-10.845,46.888A77.671,77.671,0,0,1,291.587-11.43Q271.845-.13,247.037,0Zm38.965-157.548V-31.3h18.833q22.859,0,34.938-14.937T293.535-88.97v-10q0-28.834-11.949-43.706t-34.938-14.872Z" transform="translate(1147 573)" fill="#178ee9"/>
+        </g>
+      </svg>      
+      <p class="title">Some text here</p>
+      <ul class="social-container">
+        <li>
+          <svg viewBox="0 0 512.418 512.418"><g><path d="m437.335 75.082c-100.1-100.102-262.136-100.118-362.252 0-100.103 100.102-100.118 262.136 0 362.253 100.1 100.102 262.136 100.117 362.252 0 100.103-100.102 100.117-262.136 0-362.253zm-10.706 325.739c-11.968-10.702-24.77-20.173-38.264-28.335 8.919-30.809 14.203-64.712 15.452-99.954h75.309c-3.405 47.503-21.657 92.064-52.497 128.289zm-393.338-128.289h75.309c1.249 35.242 6.533 69.145 15.452 99.954-13.494 8.162-26.296 17.633-38.264 28.335-30.84-36.225-49.091-80.786-52.497-128.289zm52.498-160.936c11.968 10.702 24.77 20.173 38.264 28.335-8.919 30.809-14.203 64.712-15.452 99.954h-75.31c3.406-47.502 21.657-92.063 52.498-128.289zm154.097 31.709c-26.622-1.904-52.291-8.461-76.088-19.278 13.84-35.639 39.354-78.384 76.088-88.977zm0 32.708v63.873h-98.625c1.13-29.812 5.354-58.439 12.379-84.632 27.043 11.822 56.127 18.882 86.246 20.759zm0 96.519v63.873c-30.119 1.877-59.203 8.937-86.246 20.759-7.025-26.193-11.249-54.82-12.379-84.632zm0 96.581v108.254c-36.732-10.593-62.246-53.333-76.088-88.976 23.797-10.817 49.466-17.374 76.088-19.278zm32.646 0c26.622 1.904 52.291 8.461 76.088 19.278-13.841 35.64-39.354 78.383-76.088 88.976zm0-32.708v-63.873h98.625c-1.13 29.812-5.354 58.439-12.379 84.632-27.043-11.822-56.127-18.882-86.246-20.759zm0-96.519v-63.873c30.119-1.877 59.203-8.937 86.246-20.759 7.025 26.193 11.249 54.82 12.379 84.632zm0-96.581v-108.254c36.734 10.593 62.248 53.338 76.088 88.977-23.797 10.816-49.466 17.373-76.088 19.277zm73.32-91.957c20.895 9.15 40.389 21.557 57.864 36.951-8.318 7.334-17.095 13.984-26.26 19.931-8.139-20.152-18.536-39.736-31.604-56.882zm-210.891 56.882c-9.165-5.947-17.941-12.597-26.26-19.931 17.475-15.394 36.969-27.801 57.864-36.951-13.068 17.148-23.465 36.732-31.604 56.882zm.001 295.958c8.138 20.151 18.537 39.736 31.604 56.882-20.895-9.15-40.389-21.557-57.864-36.951 8.318-7.334 17.095-13.984 26.26-19.931zm242.494 0c9.165 5.947 17.942 12.597 26.26 19.93-17.475 15.394-36.969 27.801-57.864 36.951 13.067-17.144 23.465-36.729 31.604-56.881zm26.362-164.302c-1.249-35.242-6.533-69.146-15.452-99.954 13.494-8.162 26.295-17.633 38.264-28.335 30.84 36.225 49.091 80.786 52.497 128.289z"/></g></svg>
+          <p>fivepd.com</p>
+        </li>
+        <li>
+          <svg x="0px" y="0px" viewBox="0 0 512 512"><g><g><g><path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z" /></g></g></g></svg>
+          <p>@five_pd</p>
+        </li>
+      </ul>
+      <p class="info">Images are from unsplash.com</p>
+      <div class="loading-bar">
+        <div class="inner-loading-bar"></div>
+      </div>
+    </div>
+    <!-- <script type="text/javascript" src="./index.js"></script> -->
+	<script type="text/javascript">
+		var count = 0;
+		var thisCount = 0;
+
+		(async function() {
+			setBackgroundImage();
+
+			const texts = [
+				"Follow us on Twitter to stay informed about new updates!",
+				"some text 1",
+				"some text 2",
+				"some text 3"
+			];
+
+			const title = document.querySelector('.title');
+
+			function changeText(i, n) {
+				if (i < n) {
+					console.log(texts[i]);
+					title.textContent = texts[i];
+					setTimeout(changeText, 2500, i+1, n);
+				} else if(i == n) {
+					setTimeout(changeText, 0, 0, n);
+				}
+			}
+			changeText(0, texts.length);
+		})();
+
+		function setBackgroundImage() {
+			const images = [
+				"https://images.unsplash.com/photo-1453873531674-2151bcd01707?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80",
+				"https://images.unsplash.com/photo-1546775392-b40c7a4f6ae1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+				"https://images.unsplash.com/photo-1518103800393-ad559c4061f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
+				"https://images.unsplash.com/photo-1538115081112-32c7d8401807?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+			];
+
+			document.body.style.backgroundImage = `url('${images[Math.floor(Math.random() * images.length)]}')`;
+			document.body.style.backgroundSize = 'cover';
+		}
+
+		const handlers = {
+			startInitFunctionOrder(data) {
+				count = data.count;
+			},
+
+			initFunctionInvoking(data) {
+				document.querySelector('.inner-loading-bar').style.left = '0%';
+				document.querySelector('.inner-loading-bar').style.width = ((data.idx / count) * 100) + '%';
+			},
+
+			startDataFileEntries(data) {
+				count = data.count;
+			},
+
+			performMapLoadFunction(data) {
+				++thisCount;
+				document.querySelector('.inner-loading-bar').style.left = '0%';
+				document.querySelector('.inner-loading-bar').style.width = ((thisCount / count) * 100) + '%';
+			},
+		};
+
+		window.addEventListener('message', function (e) {
+			(handlers[e.data.eventName] || function () { })(e.data);
+		});
+	</script>
+  </body>
+</html>

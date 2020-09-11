@@ -1,0 +1,48 @@
+{
+  "database": {
+    "username": "root",
+    "password": "",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "database": "fivepd"
+  },
+  "callouts": {
+    "MinimumTimeBeforeCall": 45,
+    "MaximumTimeBeforeCall": 160,
+    "CalloutExpirationTime": 30,
+    "CalloutChance": 65
+  },
+  "MaximumReportLength": 1000,
+  "MaximumFineAmount": 1000000,
+  "MaximumFineAmountPoint": 100,
+  "MaximumCallLength": 125,
+  "MaximumOfficerNameLength": 125,
+  "MaximumAINameLength": 50,
+  "MaximumNumberOfInvolvedOfficers": 32,
+  "MaximumNumberOfSuspects": 32,
+  "MaximumNumberOfVictims": 32,
+  "MaximumViolationCount": 32,
+  "IsSignatureEnabled": true,
+  "MaximumSignatureSize": 10.0,
+  "MaximumStreetNameLength": 25,
+  "MaximumCityNameLength": 30,
+  "MaximumZIPLength": 10,
+  "MaximumChargeCount": 15,
+  "MaximumReportCount": 100,
+  "MaximumCitationCount": 100,
+  "MinimumCallsignLength": 1,
+  "MaximumCallsignLength": 15,
+  "xp": {
+    "TRAFFIC_STOP": 250,
+    "CALL_COMPLETED": 250,
+    "BACKUP_ACCEPTED": 500,
+    "CASE_COMPLETED": 500,
+    "REPORT_COMPLETED": 250,
+    "ARREST_COMPLETED": 250,
+    "AMBULANCE_CALLED": 150,
+    "FIRE_CALLED": 150,
+    "TOW_CALLED": 150,
+    "CORONER_CALLED": 150
+  },
+  "AdminCode": "admin"
+}

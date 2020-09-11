@@ -1,0 +1,33 @@
+{
+	"police": [
+		{
+			"name": "Police 1",
+			"vehicle": "police"
+		},
+		{
+			"name": "Police 2",
+			"vehicle": "police2"
+		},
+		{
+			"name": "FIB 1",
+			"vehicle": "fbi"
+		},
+		{
+			"name": "FIB 2",
+			"vehicle": "fbi2"
+		},
+		{
+			"name": "Sheriff 1",
+			"vehicle": "sheriff"
+		},
+		{
+			"name": "Sheriff 2",
+			"vehicle": "sheriff2"
+		}
+	],
+	"ems": "ambulance",
+	"firedept": "firetruk",
+	"coroner": "speedo",
+	"towtruck": "flatbed",
+	"prisontransport": "police"
+}
