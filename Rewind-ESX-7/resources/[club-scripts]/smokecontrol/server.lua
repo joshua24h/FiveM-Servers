@@ -1,0 +1,6 @@
+RegisterServerEvent("flare:SyncStartParticles")
+AddEventHandler("flare:SyncStartParticles", function()
+    TriggerClientEvent("flare:StartParticles", -1)
+    TriggerClientEvent("flare:StartParticles2", -1)
+    TriggerClientEvent("flare:StartParticles3", -1)
+end)
